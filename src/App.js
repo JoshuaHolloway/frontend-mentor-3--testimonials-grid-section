@@ -62,7 +62,7 @@ export default function App() {
   return (
     <div className='app'>
       {data.map(({ name, credentials, comment, details, elem, svg }, i) => (
-        <div className={`card shadow ${elem}`}>
+        <div key={name} className={`card shadow ${elem}`}>
           <div className='container'>
             {svg && <img src={svg} alt='' className='quote' />}
 
