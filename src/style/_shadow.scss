@@ -1,0 +1,12 @@
+$shadow-offset: 40px;
+$v-offset: $shadow-offset;
+$h-offset: $shadow-offset;
+$blur: 35px;
+$spread: 0px;
+$shadow-clr: rgba(0, 0, 0, 0.15);
+$shadow: $h-offset $v-offset $blur $spread $shadow-clr;
+$shadow-hover: $h-offset $v-offset calc(#{$blur} * 2) $spread $shadow-clr;
+
+.shadow {
+  box-shadow: $shadow;
+}
