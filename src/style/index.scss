@@ -81,12 +81,15 @@ body {
         @each $elem in $elems {
           &.#{$elem} {
             grid-area: #{$elem};
+            .img {
+              border: solid 2px transparent;
+            }
           }
         }
         &.A {
           background: $bg-purple;
           .img {
-            outline: solid 2px $bg-purple-border;
+            border: solid 2px $bg-purple-border;
           }
 
           position: relative;
@@ -113,7 +116,7 @@ body {
         &.E {
           background: $bg-blue;
           .img {
-            outline: solid 2px $bg-purple;
+            border: solid 2px $bg-purple;
           }
         }
 
